@@ -1,0 +1,13 @@
+﻿[
+  '{{repeat(10, 100)}}',
+  {
+    _id: '{{objectId()}}',
+    guid: '{{guid()}}',
+    isActive: '{{bool()}}',
+    balance: '{{floating(10, 9999, 2, "$0,0.00")}}',
+    picture: 'http://placehold.it/128x128',
+    product: '{{country()}}',
+    description: '{{lorem(1,"paragraph")}}'
+    
+  }
+]
