@@ -1,7 +1,22 @@
 ﻿(function () {
     angular.module("productsModule")
-        .controller("productsViewController", ["$state", function ($state) {
+        .controller("productsViewController", ["$state", "ProductServices", function ($state, ProductServices) {
             var vm = this;
-            vm.test = "hello world"
+            vm.products = [];
+
+            vm.initialize = function () {
+                ProductServices.GetProducts().then(function (data) {
+                    vm.products = data;
+                });
+            }
+
+            vm.purchaseTicket = function () {
+
+            }
+
+            vm.goToDetails = function () {
+
+            }
+
         }]);
 })()

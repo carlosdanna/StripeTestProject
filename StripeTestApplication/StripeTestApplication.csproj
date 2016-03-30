@@ -318,8 +318,8 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-sanitize.min.js.map" />
     <Content Include="App\transactions\create\transactions.create.tmpl.html" />
-    <Content Include="App\jsonFiles\Products.json" />
     <Content Include="App\jsonFiles\generators\Products.json" />
+    <Content Include="App\jsonFiles\Products.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\bootstrap.js" />

@@ -1,6 +1,8 @@
 ﻿(function () {
     angular.module("myApp", [
         "ui.router",
-        "productsModule"
+        "productsModule",
+        "AppConfig"
     ]);
+    
 })()
