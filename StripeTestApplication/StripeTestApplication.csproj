@@ -228,6 +228,9 @@
     <Content Include="App\app.controller.js" />
     <Content Include="App\app.module.js" />
     <Content Include="App\app.tmpl.html" />
+    <Content Include="App\appConfig.module.js" />
+    <Content Include="App\products\purchaseTicket\products.purchase.controller.js" />
+    <Content Include="App\products\purchaseTicket\products.purchase.tmpl.html" />
     <Content Include="App\subscriptions\create\subscriptions.create.controller.js" />
     <Content Include="App\subscriptions\create\subscriptions.create.tmpl.html" />
     <Content Include="App\subscriptions\subscriptions.config.js" />

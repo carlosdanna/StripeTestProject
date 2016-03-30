@@ -19,19 +19,19 @@ namespace StripeTestApplication.Controllers
             
             StripeTokenService tokenService = new StripeTokenService();
             
-            StripeToken stripeToken = tokenService.Get(st.stripeToken);
-            myCharge.Amount = st.amount;
+            StripeToken stripeToken = tokenService.Get(st.id);
+            
             myCharge.Currency = "usd";
 
             //If you uncomment this line it would not be necessary to create 
             //myCharge.Source because it will take the default Payment method stored in braintree
             //myCharge.CustomerId = "cus_8APkavDDfLpF18";
 
-
+            myCharge.Amount = st.amount;
 
             myCharge.Source = new StripeSourceOptions()
             {
-                TokenId = st.stripeToken,
+                TokenId = st.id,
                 //Uncoment these lines to create a credit card in exchange you will have to comment tokenId
                 //Object = "card",
                 //Number = "4242424242424242",
@@ -62,14 +62,14 @@ namespace StripeTestApplication.Controllers
             var myCharge = new StripeChargeCreateOptions();
             
             StripeTokenService tokenService = new StripeTokenService();
-            StripeToken stripeToken = tokenService.Get(st.stripeToken);
+            StripeToken stripeToken = tokenService.Get(st.id);
             
             myCharge.Amount = st.amount;
             myCharge.Currency = "usd";
             //myCharge.CustomerId = "cus_8APkavDDfLpF18";
             myCharge.Source = new StripeSourceOptions()
             {
-                TokenId = st.stripeToken,
+                TokenId = st.id,
                 
                 //Object = "card",
                 //Number = "4242424242424242",

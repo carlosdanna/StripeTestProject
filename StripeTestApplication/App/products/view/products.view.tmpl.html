@@ -3,7 +3,7 @@
         <div class="panel panel-default" >
             <div class="panel-heading">
                 <h3>{{product.product}}</h3>
-                <h4>{{product.balance}}</h4>
+                <h4>{{product.balance / 100 | currency: "$"}}</h4>
             </div>
             <div class="panel-body" style="height: 500px;">
                 <img class="center-block" src="{{product.picture}}" />
@@ -11,7 +11,7 @@
             </div>
             <div class="panel-footer">
                 <button class="btn btn-primary" ng-click="vm.goToDetails()">Details</button>
-                <button class="btn btn-success" ng-click="vm.purchaseTicket()">Purchase Ticket</button>
+                <button class="btn btn-success" ng-click="vm.purchaseTicket(product)">Purchase Ticket</button>
             </div>
         </div>
     </div>
